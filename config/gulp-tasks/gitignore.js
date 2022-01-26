@@ -4,7 +4,7 @@ export const gitignore = () => {
 		fs.writeFile('./.gitignore', '', cb);
 		fs.appendFile('./.gitignore', 'phpmailer/\r\n', cb);
 		fs.appendFile('./.gitignore', 'package-lock.json\r\n', cb);
-		fs.appendFile('./.gitignore', 'flsStartTemplate/\r\n', cb);
+		fs.appendFile('./.gitignore', 'myTemplate/\r\n', cb);
 		fs.appendFile('./.gitignore', 'node_modules/\r\n', cb);
 		fs.appendFile('./.gitignore', '.gitignore\r\n', cb);
 		fs.appendFile('./.gitignore', 'dist/\r\n', cb);
@@ -13,7 +13,7 @@ export const gitignore = () => {
 		fs.appendFile('./.gitignore', app.buildFolder + '\r\n', cb);
 		fs.appendFile('./.gitignore', '**/*.zip\r\n', cb);
 		fs.appendFile('./.gitignore', '**/*.rar\r\n', cb);
-		//if (projectName !== 'flsStart') del('./.git/');
+		//if (projectName !== 'myTemplate') del('./.git/');
 	}
 	return app.gulp.src(`${app.path.srcFolder}`);
 }

@@ -5,7 +5,7 @@ import CopyPlugin from "copy-webpack-plugin";
 
 import * as path from 'path';
 
-const srcFolder = "src";
+const srcFolder = "app";
 const builFolder = "dist";
 const rootFolder = path.basename(path.resolve());
 

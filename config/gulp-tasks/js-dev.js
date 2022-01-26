@@ -3,7 +3,7 @@ import webPackConfig from '../webpack.prod.js';
 import TerserPlugin from "terser-webpack-plugin";
 import * as path from 'path';
 
-const srcFolder = "src";
+const srcFolder = "app";
 const builFolder = "dist";
 
 const paths = {

@@ -4,7 +4,7 @@ const rootFolder = nodePath.basename(nodePath.resolve());
 
 // Пути к папке с исходниками и папке с результатом
 const buildFolder = `./dist`;
-const srcFolder = `./src`;
+const srcFolder = `./app`;
 
 // Пути к папкам и файлам проекта
 export const path = {
@@ -31,13 +31,13 @@ export const path = {
 	buildFolder: buildFolder,
 	rootFolder: rootFolder,
 	srcFolder: srcFolder,
-	ftp: `htdocs` // Путь к нужной папке на удаленном сервере. gulp добавит имя папки проекта автоматически
+	ftp: `` // Путь к нужной папке на удаленном сервере. gulp добавит имя папки проекта автоматически
 };
 
 // Настройка FTP соединения
 export const configFTP = {
-	host: "ftpupload.net", // Адрес FTP сервера
-	user: "ezyro_30564312", // Имя пользователя
-	password: "q1q2q3q4q5", // Пароль
+	host: "", // Адрес FTP сервера
+	user: "", // Имя пользователя
+	password: "", // Пароль
 	parallel: 5 // Кол-во одновременных потоков
 }
